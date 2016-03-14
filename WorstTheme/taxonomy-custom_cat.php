@@ -21,30 +21,30 @@ taxonomy-shoes.php
 
 	<div id="inner-content" class="row">
 
-	    <main id="main" class="large-8 medium-8 columns first" role="main">
+	    <main id="main" class="large-12 medium-12 columns" role="main">
 
 		    <header>
 		    	<h1 class="page-title"><span><?php _e( 'Posts Categorized:', 'jointswp' ); ?></span> <?php single_cat_title(); ?></h1>
 		    </header>
 
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<!-- To see additional archive styles, visit the /parts directory -->
-				<?php get_template_part( 'parts/loop', 'archive' ); ?>
+					<!-- To see additional archive styles, visit the /parts directory -->
+					<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-				<?php joints_page_navi(); ?>
+					<?php joints_page_navi(); ?>
 
-			<?php else : ?>
+				<?php else : ?>
 
-				<?php get_template_part( 'parts/content', 'missing' ); ?>
+					<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-			<?php endif; ?>
+				<?php endif; ?>
 
-	    </main> <!-- end #main -->
+				<?php get_sidebar(); ?>
 
-	    <?php get_sidebar(); ?>
+		  </main> <!-- end #main -->
 
 	</div> <!-- end #inner-content -->
 
