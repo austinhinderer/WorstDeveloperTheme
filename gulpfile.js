@@ -13,7 +13,11 @@ var gulp  = require('gulp'),
     plumber = require('gulp-plumber'),
     bower = require('gulp-bower'),
     babel = require('gulp-babel'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    sftp = require('gulp-sftp'),
+    fs = require('fs');
+
+var sftpCredentials = JSON.parse(fs.readFileSync('./config/sftp.json'));
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
@@ -140,4 +144,9 @@ gulp.task('watch', function() {
 // Run styles, site-js and foundation-js
 gulp.task('default', function() {
   gulp.start('styles', 'site-js', 'foundation-js');
+});
+
+gulp.task('deploy', function () {
+  gulp.src('WorstTheme/**')
+    .pipe(sftp(sftpCredentials));
 });
