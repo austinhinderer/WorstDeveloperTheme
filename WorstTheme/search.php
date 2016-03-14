@@ -6,7 +6,7 @@
 
 		<div id="inner-content" class="row">
 
-			<main id="main" class="large-8 medium-8 columns first" role="main">
+			<main id="main" class="large-12 medium-12 columns" role="main">
 				<header>
 					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
 				</header>
@@ -26,9 +26,9 @@
 
 			    <?php endif; ?>
 
-		    </main> <!-- end #main -->
+			    <?php get_sidebar(); ?>
 
-		    <?php get_sidebar(); ?>
+		    </main> <!-- end #main -->
 
 		</div> <!-- end #inner-content -->
 
