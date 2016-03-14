@@ -17,7 +17,7 @@ var gulp  = require('gulp'),
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
-    return gulp.src('./assets/scss/**/*.scss')
+    return gulp.src('./WorstTheme/assets/scss/**/*.scss')
         .pipe(plumber(function(error) {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
@@ -28,61 +28,61 @@ gulp.task('styles', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./assets/css/'))
+        .pipe(gulp.dest('./WorstTheme/assets/css/'))
         .pipe(rename({suffix: '.min'}))
         .pipe(cssnano())
         .pipe(sourcemaps.write('.')) // Creates sourcemaps for minified styles
-        .pipe(gulp.dest('./assets/css/'))
+        .pipe(gulp.dest('./WorstTheme/assets/css/'))
 });
-    
+
 // JSHint, concat, and minify JavaScript
 gulp.task('site-js', function() {
-  return gulp.src([	
-	  
+  return gulp.src([
+
            // Grab your custom scripts
-  		  './assets/js/scripts/*.js'
-  		  
+  		  './WorstTheme/assets/js/scripts/*.js'
+
   ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('./assets/js'))
+    .pipe(gulp.dest('./WorstTheme/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(sourcemaps.write('.')) // Creates sourcemap for minified JS
-    .pipe(gulp.dest('./assets/js'))
-});    
+    .pipe(gulp.dest('./WorstTheme/assets/js'))
+});
 
 // JSHint, concat, and minify Foundation JavaScript
 gulp.task('foundation-js', function() {
-  return gulp.src([	
-  		  
+  return gulp.src([
+
   		  // Foundation core - needed if you want to use any of the components below
-          './vendor/foundation-sites/js/foundation.core.js',
-          './vendor/foundation-sites/js/foundation.util.*.js',
-          
+          './WorstTheme/vendor/foundation-sites/js/foundation.core.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.util.*.js',
+
           // Pick the components you need in your project
-          './vendor/foundation-sites/js/foundation.abide.js',
-          './vendor/foundation-sites/js/foundation.accordion.js',
-          './vendor/foundation-sites/js/foundation.accordionMenu.js',
-          './vendor/foundation-sites/js/foundation.drilldown.js',
-          './vendor/foundation-sites/js/foundation.dropdown.js',
-          './vendor/foundation-sites/js/foundation.dropdownMenu.js',
-          './vendor/foundation-sites/js/foundation.equalizer.js',
-          './vendor/foundation-sites/js/foundation.interchange.js',
-          './vendor/foundation-sites/js/foundation.magellan.js',
-          './vendor/foundation-sites/js/foundation.offcanvas.js',
-          './vendor/foundation-sites/js/foundation.orbit.js',
-          './vendor/foundation-sites/js/foundation.responsiveMenu.js',
-          './vendor/foundation-sites/js/foundation.responsiveToggle.js',
-          './vendor/foundation-sites/js/foundation.reveal.js',
-          './vendor/foundation-sites/js/foundation.slider.js',
-          './vendor/foundation-sites/js/foundation.sticky.js',
-          './vendor/foundation-sites/js/foundation.tabs.js',
-          './vendor/foundation-sites/js/foundation.toggler.js',
-          './vendor/foundation-sites/js/foundation.tooltip.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.abide.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.accordion.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.accordionMenu.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.drilldown.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.dropdown.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.dropdownMenu.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.equalizer.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.interchange.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.magellan.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.offcanvas.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.orbit.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.responsiveMenu.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.responsiveToggle.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.reveal.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.slider.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.sticky.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.tabs.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.toggler.js',
+          './WorstTheme/vendor/foundation-sites/js/foundation.tooltip.js',
   ])
 	.pipe(babel({
 		presets: ['es2015'],
@@ -90,25 +90,25 @@ gulp.task('foundation-js', function() {
 	}))
     .pipe(sourcemaps.init())
     .pipe(concat('foundation.js'))
-    .pipe(gulp.dest('./assets/js'))
+    .pipe(gulp.dest('./WorstTheme/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(sourcemaps.write('.')) // Creates sourcemap for minified Foundation JS
-    .pipe(gulp.dest('./assets/js'))
-}); 
+    .pipe(gulp.dest('./WorstTheme/assets/js'))
+});
 
-// Update Foundation with Bower and save to /vendor
+// Update Foundation with Bower and save to /WorstTheme/vendor
 gulp.task('bower', function() {
   return bower({ cmd: 'update'})
     .pipe(gulp.dest('vendor/'))
-});  
+});
 
 // Browser-Sync watch files and inject changes
 gulp.task('browsersync', function() {
     // Watch files
     var files = [
-    	'./assets/css/*.css', 
-    	'./assets/js/*.js',
+    	'./WorstTheme/assets/css/*.css',
+    	'./WorstTheme/assets/js/*.js',
     	'**/*.php',
     	'assets/images/**/*.{png,jpg,gif,svg,webp}',
     ];
@@ -117,9 +117,9 @@ gulp.task('browsersync', function() {
 	    // Replace with URL of your local site
 	    proxy: "http://localhost/",
     });
-    
-    gulp.watch('./assets/scss/**/*.scss', ['styles']);
-    gulp.watch('./assets/js/scripts/*.js', ['site-js']).on('change', browserSync.reload);
+
+    gulp.watch('./WorstTheme/assets/scss/**/*.scss', ['styles']);
+    gulp.watch('./WorstTheme/assets/js/scripts/*.js', ['site-js']).on('change', browserSync.reload);
 
 });
 
@@ -127,15 +127,15 @@ gulp.task('browsersync', function() {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('./assets/scss/**/*.scss', ['styles']);
+  gulp.watch('./WorstTheme/assets/scss/**/*.scss', ['styles']);
 
   // Watch site-js files
-  gulp.watch('./assets/js/scripts/*.js', ['site-js']);
-  
-  // Watch foundation-js files
-  gulp.watch('./vendor/foundation-sites/js/*.js', ['foundation-js']);
+  gulp.watch('./WorstTheme/assets/js/scripts/*.js', ['site-js']);
 
-}); 
+  // Watch foundation-js files
+  gulp.watch('./WorstTheme/vendor/foundation-sites/js/*.js', ['foundation-js']);
+
+});
 
 // Run styles, site-js and foundation-js
 gulp.task('default', function() {
