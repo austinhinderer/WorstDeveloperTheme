@@ -4143,7 +4143,7 @@ Stylesheet: Main Stylesheet
 GENERAL STYLES
 *********************/
 body {
-  background: url(https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8);
+  background: url(https://images.unsplash.com/photo-1443890923422-7819ed4101c0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9c79afe3d7a158a876502b1cc548332);
   background-attachment: fixed;
   background-size: cover; }
 
@@ -4193,9 +4193,11 @@ NAVIGATION STYLES
 
 /* POST AREA */
 .post {
-  background-color: #fefefe;
-  margin-bottom: 100px;
+  background-color: rgba(254, 254, 254, 0.94);
+  margin-bottom: 35px;
   padding: 1.09375rem; }
+  .post:last-child {
+    margin-bottom: 0; }
 
 .article-header {
   padding: 1.09375rem 0; }
@@ -4221,8 +4223,8 @@ LOGO AREA
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  background-color: #F4F4F4;
-  padding: 35px 0;
+  background-color: rgba(244, 244, 244, 0.25);
+  padding: 1.09375rem 0;
   margin-top: 70px; }
 
 .page-title .vcard {
@@ -4425,7 +4427,7 @@ SIDEBARS & ASIDES
 *********************/
 .widget {
   padding: 35px;
-  background-color: #fefefe;
+  background-color: rgba(254, 254, 254, 0.94);
   margin-bottom: 35px; }
   .widget ul {
     margin: 0; }
