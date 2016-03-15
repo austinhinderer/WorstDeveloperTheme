@@ -974,7 +974,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #aeb0b1;
-  background: #30373d;
+  background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1039,12 +1039,12 @@ button {
     padding-left: 0;
     padding-right: 0; }
   .row .row {
-    margin-left: -0.625rem;
-    margin-right: -0.625rem; }
+    margin-left: -0.78125rem;
+    margin-right: -0.78125rem; }
     @media screen and (min-width: 40em) {
       .row .row {
-        margin-left: -0.9375rem;
-        margin-right: -0.9375rem; } }
+        margin-left: -1.09375rem;
+        margin-right: -1.09375rem; } }
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
@@ -1057,12 +1057,12 @@ button {
 .column, .columns {
   width: 100%;
   float: left;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem; }
+  padding-left: 0.78125rem;
+  padding-right: 0.78125rem; }
   @media screen and (min-width: 40em) {
     .column, .columns {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
+      padding-left: 1.09375rem;
+      padding-right: 1.09375rem; } }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -1325,8 +1325,8 @@ button {
   margin-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem; }
+  padding-left: 0.78125rem;
+  padding-right: 0.78125rem; }
 
 .small-centered {
   float: none;
@@ -1535,8 +1535,8 @@ button {
     margin-left: 0;
     margin-right: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.09375rem;
+    padding-right: 1.09375rem; }
   .medium-centered {
     float: none;
     margin-left: auto;
@@ -1743,8 +1743,8 @@ button {
     margin-left: 0;
     margin-right: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.09375rem;
+    padding-right: 1.09375rem; }
   .large-centered {
     float: none;
     margin-left: auto;
@@ -2206,7 +2206,7 @@ legend {
   padding: 1.25rem;
   margin: 1.125rem 0; }
   .fieldset legend {
-    background: #30373d;
+    background: #fefefe;
     padding: 0 0.1875rem;
     margin: 0;
     margin-left: -0.1875rem; }
@@ -2618,7 +2618,7 @@ select {
     font-size: 0.9rem;
     float: left; }
     .button-group .button:not(:last-child) {
-      border-right: 1px solid #30373d; }
+      border-right: 1px solid #fefefe; }
   .button-group.tiny .button {
     font-size: 0.6rem; }
   .button-group.small .button {
@@ -2802,7 +2802,7 @@ select {
   margin-right: 0.75rem; }
 
 .dropdown-pane {
-  background-color: #30373d;
+  background-color: #fefefe;
   border: 1px solid #cacaca;
   border-radius: 0;
   display: block;
@@ -3200,8 +3200,8 @@ select {
   .menu.nested {
     margin-left: 1rem; }
   .menu .active > a {
-    color: #fefefe;
-    background: #F55B44; }
+    color: #F55B44;
+    background: transparent; }
 
 .menu-text {
   font-weight: bold;
@@ -3293,7 +3293,7 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #30373d;
+  background: #fefefe;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   -webkit-backface-visibility: hidden;
@@ -4142,6 +4142,14 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+body {
+  background: url(https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8);
+  background-attachment: fixed;
+  background-size: cover; }
+
+.off-canvas-content {
+  background: transparent; }
+
 /*********************
 LINK STYLES
 *********************/
@@ -4151,8 +4159,10 @@ a:link, a:visited:link {
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-  text-decoration: none; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: 'Oswald', sans-serif; }
+  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+    text-decoration: none; }
 
 /*********************
 HEADER STYLES
@@ -4163,8 +4173,16 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-bar .title-area {
-  z-index: 1; }
+.top-bar {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px; }
+  .top-bar a {
+    color: #aeb0b1; }
+    .top-bar a:hover, .top-bar a:focus {
+      color: #f3371a; }
+  .top-bar .title-area {
+    z-index: 1; }
 
 .off-canvas-list ul {
   margin-left: 0; }
@@ -4173,25 +4191,39 @@ NAVIGATION STYLES
   .off-canvas-list ul .dropdown {
     margin-left: 20px; }
 
+/* POST AREA */
+.post {
+  background-color: #fefefe;
+  margin-bottom: 100px;
+  padding: 1.09375rem; }
+
+.article-header {
+  padding: 1.09375rem 0; }
+  .article-header .entry-categories {
+    font-family: 'Oswald', sans-serif; }
+
 /*********************
 LOGO AREA
 *********************/
 .logo-container {
-  padding: 50px 0; }
+  background-color: #30373d;
+  padding: 35px 0; }
   .logo-container .logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
+    color: #fefefe;
+    font-size: 22px;
     padding: 16px 30px;
     display: inline-block;
     background-color: #F55B44;
-    margin: 0; }
+    margin: 0 0 6px;
+    font-family: 'Oswald', sans-serif; }
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 1rem 0rem; }
+  background-color: #F4F4F4;
+  padding: 35px 0;
+  margin-top: 70px; }
 
 .page-title .vcard {
   border: 0px;
@@ -4391,10 +4423,14 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.widget ul {
-  margin: 0; }
-  .widget ul li {
-    list-style: none; }
+.widget {
+  padding: 35px;
+  background-color: #fefefe;
+  margin-bottom: 35px; }
+  .widget ul {
+    margin: 0; }
+    .widget ul li {
+      list-style: none; }
 
 /*********************
 FOOTER STYLES

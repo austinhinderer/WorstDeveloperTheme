@@ -7,6 +7,15 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+body {
+  background: url(https://images.unsplash.com/photo-1453282716202-de94e528067c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ac9b38e57a8a0724058cdcbe6a687aa8);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.off-canvas-content {
+  background: transparent;
+}
 
 /*********************
 LINK STYLES
@@ -24,6 +33,7 @@ a, a:visited {
 H1, H2, H3, H4, H5 P STYLES
 *********************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: 'Oswald', sans-serif;
 
   // Removing text decoration from all headline links
   a {
@@ -64,6 +74,22 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 .top-bar {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  a {
+    color: #aeb0b1;
+
+    &:hover,
+    &:focus {
+      color: $anchor-color-hover;
+      @if $anchor-text-decoration-hover != $anchor-text-decoration {
+        text-decoration: $anchor-text-decoration-hover;
+      }
+    }
+  }
+
   .title-area {
     z-index: 1;
   }
@@ -83,20 +109,36 @@ NAVIGATION STYLES
   }
 }
 
+/* POST AREA */
+.post {
+  background-color: $white;
+  margin-bottom: 100px;
+  padding: 1.09375rem;
+}
+
+.article-header {
+  padding: 1.09375rem 0;
+
+  .entry-categories {
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
 /*********************
 LOGO AREA
 *********************/
 .logo-container {
-  padding: 50px 0;
+  background-color: #30373d;
+  padding: 35px 0;
 
   .logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
+    color: $white;
+    font-size: 22px;
     padding: 16px 30px;
     display: inline-block;
     background-color: #F55B44;
-    margin: 0;
+    margin: 0 0 6px;
+    font-family: 'Oswald', sans-serif;
   }
 }
 
@@ -105,7 +147,9 @@ POSTS & CONTENT STYLES
 *********************/
 #content {
   #inner-content {
-    padding: 1rem 0rem;
+    background-color: #F4F4F4;
+    padding: 35px 0;
+    margin-top: 70px;
   }
 }
 
@@ -493,6 +537,10 @@ SIDEBARS & ASIDES
 }
 
 .widget {
+  padding: 35px;
+  background-color: $white;
+  margin-bottom: 35px;
+
   ul {
     margin: 0;
 
