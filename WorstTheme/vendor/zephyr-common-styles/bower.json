@@ -1,0 +1,16 @@
+{
+  "name": "zephyr-common-styles",
+  "description": "Common styles for use with Zephyr websites",
+  "version": "0.0.1",
+  "main": [
+    "common.scss"
+  ],
+  "authors": [
+    "Austin Hinderer <me@austinhinderer.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ],
+  "private": true
+}

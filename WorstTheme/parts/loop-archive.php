@@ -4,7 +4,7 @@
 
   <header class="article-header text-center">
     <span class="entry-categories"><?php the_category(', ') ?></span>
-    <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+    <h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
   </header> <!-- end article header -->
 
   <section class="entry-content" itemprop="articleBody">

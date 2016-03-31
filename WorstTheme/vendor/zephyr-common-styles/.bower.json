@@ -1,0 +1,25 @@
+{
+  "name": "zephyr-common-styles",
+  "description": "Common styles for use with Zephyr websites",
+  "main": [
+    "common.scss"
+  ],
+  "authors": [
+    "Austin Hinderer <me@austinhinderer.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ],
+  "private": true,
+  "homepage": "https://github.com/austinhinderer/CommonStyles",
+  "_release": "c0a1375e96",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c0a1375e96e2adca44a4b0cd4fbf949ea8d890e5"
+  },
+  "_source": "git://github.com/austinhinderer/CommonStyles.git",
+  "_target": "*",
+  "_originalSource": "austinhinderer/CommonStyles"
+}

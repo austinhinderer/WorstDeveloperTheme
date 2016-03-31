@@ -21,7 +21,10 @@ var sftpCredentials = JSON.parse(fs.readFileSync('./config/sftp.json'));
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
-    return gulp.src('./WorstTheme/assets/scss/**/*.scss')
+    return gulp.src([
+          './WorstTheme/assets/vendor/zephyr-common-styles/*.scss',
+          './WorstTheme/assets/scss/**/*.scss'
+        ])
         .pipe(plumber(function(error) {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');

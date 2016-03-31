@@ -1,8 +1,27 @@
 {
   "name": "WorstTheme",
-  "private": true,
-  "ignore":  [],
+  "version": "0.0.1",
+  "main": [
+    "WorstTheme/assets/scss/style.scss"
+  ],
   "dependencies": {
-    "foundation-sites": ">=6.1"
-  }
+    "foundation-sites": ">=6.1",
+    "zephyr-common-styles": "austinhinderer/CommonStyles"
+  },
+  "authors": [
+    "Austin Hinderer <me@austinhinderer.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/austinhinderer/WorstDeveloperTheme.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
 }

@@ -55,11 +55,9 @@ CSS3 GRADIENTS.
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
-.slide-in-down.mui-enter, .slide-in-left.mui-enter, .slide-in-up.mui-enter, .slide-in-right.mui-enter, .slide-out-down.mui-leave, .slide-out-right.mui-leave, .slide-out-up.mui-leave, .slide-out-left.mui-leave, .fade-in.mui-enter, .fade-out.mui-leave, .hinge-in-from-top.mui-enter, .hinge-in-from-right.mui-enter, .hinge-in-from-bottom.mui-enter, .hinge-in-from-left.mui-enter, .hinge-in-from-middle-x.mui-enter, .hinge-in-from-middle-y.mui-enter, .hinge-out-from-top.mui-leave, .hinge-out-from-right.mui-leave, .hinge-out-from-bottom.mui-leave, .hinge-out-from-left.mui-leave, .hinge-out-from-middle-x.mui-leave, .hinge-out-from-middle-y.mui-leave, .scale-in-up.mui-enter, .scale-in-down.mui-enter, .scale-out-up.mui-leave, .scale-out-down.mui-leave, .spin-in.mui-enter, .spin-out.mui-leave, .spin-in-ccw.mui-enter, .spin-out-ccw.mui-leave {
-  transition-duration: 500ms;
-  transition-timing-function: linear; }
-
 .slide-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   transition-property: -webkit-transform, opacity;
@@ -72,6 +70,8 @@ CSS3 GRADIENTS.
   transform: translateY(0); }
 
 .slide-in-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   transition-property: -webkit-transform, opacity;
@@ -84,6 +84,8 @@ CSS3 GRADIENTS.
   transform: translateX(0); }
 
 .slide-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   transition-property: -webkit-transform, opacity;
@@ -96,6 +98,8 @@ CSS3 GRADIENTS.
   transform: translateY(0); }
 
 .slide-in-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   transition-property: -webkit-transform, opacity;
@@ -108,6 +112,8 @@ CSS3 GRADIENTS.
   transform: translateX(0); }
 
 .slide-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   transition-property: -webkit-transform, opacity;
@@ -120,6 +126,8 @@ CSS3 GRADIENTS.
   transform: translateY(100%); }
 
 .slide-out-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(0);
   transform: translateX(0);
   transition-property: -webkit-transform, opacity;
@@ -132,6 +140,8 @@ CSS3 GRADIENTS.
   transform: translateX(100%); }
 
 .slide-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   transition-property: -webkit-transform, opacity;
@@ -144,6 +154,8 @@ CSS3 GRADIENTS.
   transform: translateY(-100%); }
 
 .slide-out-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: translateX(0);
   transform: translateX(0);
   transition-property: -webkit-transform, opacity;
@@ -156,6 +168,8 @@ CSS3 GRADIENTS.
   transform: translateX(-100%); }
 
 .fade-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 0;
   transition-property: opacity; }
 
@@ -163,6 +177,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .fade-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   opacity: 1;
   transition-property: opacity; }
 
@@ -170,6 +186,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .hinge-in-from-top.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateX(-90deg);
   transform: perspective(2000px) rotateX(-90deg);
   -webkit-transform-origin: top;
@@ -184,6 +202,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .hinge-in-from-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateY(-90deg);
   transform: perspective(2000px) rotateY(-90deg);
   -webkit-transform-origin: right;
@@ -198,6 +218,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .hinge-in-from-bottom.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateX(90deg);
   transform: perspective(2000px) rotateX(90deg);
   -webkit-transform-origin: bottom;
@@ -212,6 +234,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .hinge-in-from-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateY(90deg);
   transform: perspective(2000px) rotateY(90deg);
   -webkit-transform-origin: left;
@@ -226,6 +250,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .hinge-in-from-middle-x.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateX(-90deg);
   transform: perspective(2000px) rotateX(-90deg);
   -webkit-transform-origin: center;
@@ -240,6 +266,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .hinge-in-from-middle-y.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotateY(-90deg);
   transform: perspective(2000px) rotateY(-90deg);
   -webkit-transform-origin: center;
@@ -254,6 +282,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .hinge-out-from-top.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: top;
@@ -268,6 +298,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .hinge-out-from-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: right;
@@ -282,6 +314,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .hinge-out-from-bottom.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: bottom;
@@ -296,6 +330,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .hinge-out-from-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: left;
@@ -310,6 +346,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .hinge-out-from-middle-x.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: center;
@@ -324,6 +362,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .hinge-out-from-middle-y.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: center;
@@ -338,6 +378,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .scale-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
   transition-property: -webkit-transform, opacity;
@@ -350,6 +392,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .scale-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   transition-property: -webkit-transform, opacity;
@@ -362,6 +406,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .scale-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(1);
   transform: scale(1);
   transition-property: -webkit-transform, opacity;
@@ -374,6 +420,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .scale-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: scale(1);
   transform: scale(1);
   transition-property: -webkit-transform, opacity;
@@ -386,6 +434,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .spin-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(-0.75turn);
   transform: rotate(-0.75turn);
   transition-property: -webkit-transform, opacity;
@@ -398,6 +448,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .spin-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(0);
   transform: rotate(0);
   transition-property: -webkit-transform, opacity;
@@ -410,6 +462,8 @@ CSS3 GRADIENTS.
   opacity: 0; }
 
 .spin-in-ccw.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(0.75turn);
   transform: rotate(0.75turn);
   transition-property: -webkit-transform, opacity;
@@ -422,6 +476,8 @@ CSS3 GRADIENTS.
   opacity: 1; }
 
 .spin-out-ccw.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
   -webkit-transform: rotate(0);
   transform: rotate(0);
   transition-property: -webkit-transform, opacity;
@@ -546,6 +602,13 @@ CSS3 GRADIENTS.
   0%, 30%, 70%, 100% {
     -webkit-transform: rotate(0);
     transform: rotate(0); } }
+
+.shake,
+.spin-cw,
+.spin-ccw,
+.wiggle {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms; }
 
 .infinite {
   -webkit-animation-iteration-count: infinite;
@@ -973,7 +1036,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #aeb0b1;
+  color: #0a0a0a;
   background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1021,7 +1084,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
+  max-width: 62.5rem;
   margin-left: auto;
   margin-right: auto; }
   .row::before, .row::after {
@@ -1865,7 +1928,7 @@ a {
     border: 0; }
 
 hr {
-  max-width: 75rem;
+  max-width: 62.5rem;
   height: 0;
   border-right: 0;
   border-top: 0;
@@ -1917,7 +1980,7 @@ cite {
     content: '\2014 \0020'; }
 
 abbr {
-  color: #aeb0b1;
+  color: #0a0a0a;
   cursor: help;
   border-bottom: 1px dotted #0a0a0a; }
 
@@ -2706,7 +2769,7 @@ select {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   position: relative;
-  color: #aeb0b1;
+  color: #0a0a0a;
   background-color: white; }
   .callout > :first-child {
     margin-top: 0; }
@@ -3671,7 +3734,7 @@ body.is-reveal-open {
   @media screen and (min-width: 40em) {
     .reveal {
       width: 600px;
-      max-width: 75rem; } }
+      max-width: 62.5rem; } }
   @media screen and (min-width: 40em) {
     .reveal .reveal {
       left: auto;
@@ -3682,15 +3745,15 @@ body.is-reveal-open {
   @media screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 75rem; } }
+      max-width: 62.5rem; } }
   @media screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
-      max-width: 75rem; } }
+      max-width: 62.5rem; } }
   @media screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
-      max-width: 75rem; } }
+      max-width: 62.5rem; } }
   .reveal.full {
     top: 0;
     left: 0;
@@ -3832,7 +3895,7 @@ table {
   table thead,
   table tfoot {
     background: #f8f8f8;
-    color: #aeb0b1; }
+    color: #0a0a0a; }
     table thead tr,
     table tfoot tr {
       background: transparent; }
@@ -4076,7 +4139,7 @@ table.hover tr:nth-of-type(even):hover {
     transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: 0; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table;
@@ -4143,7 +4206,7 @@ Stylesheet: Main Stylesheet
 GENERAL STYLES
 *********************/
 body {
-  background: url(https://images.unsplash.com/photo-1443890923422-7819ed4101c0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9c79afe3d7a158a876502b1cc548332);
+  background: url(https://images.unsplash.com/photo-1438109519352-a52c41243c1a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=08f156a8735072ae58c13c679194297c);
   background-attachment: fixed;
   background-size: cover; }
 
@@ -4194,22 +4257,34 @@ NAVIGATION STYLES
 /* POST AREA */
 .post {
   background-color: rgba(254, 254, 254, 0.94);
-  margin-bottom: 35px;
-  padding: 1.09375rem; }
+  margin-bottom: 105px; }
   .post:last-child {
     margin-bottom: 0; }
 
 .article-header {
-  padding: 1.09375rem 0; }
+  padding: 70px 70px 25px; }
+  .article-header .entry-categories a:link, .article-header .entry-categories a:visited, .article-header .entry-title a:link, .article-header .entry-title a:visited {
+    color: #0a0a0a; }
+  .article-header .entry-categories a:hover, .article-header .entry-categories a:focus, .article-header .entry-title a:hover, .article-header .entry-title a:focus {
+    color: #f3371a; }
   .article-header .entry-categories {
-    font-family: 'Oswald', sans-serif; }
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px; }
+    .article-header .entry-categories a:link, .article-header .entry-categories a:visited {
+      color: #aeb0b1; }
+  .article-header .entry-title {
+    font-size: 36px; }
+
+.entry-content {
+  padding: 0 105px 70px; }
 
 /*********************
 LOGO AREA
 *********************/
 .logo-container {
   background-color: #30373d;
-  padding: 35px 0; }
+  padding: 25px 0;
+  color: #aeb0b1; }
   .logo-container .logo {
     color: #fefefe;
     font-size: 22px;
@@ -4223,10 +4298,7 @@ LOGO AREA
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  background-color: rgba(244, 244, 244, 0.25);
-  padding: 1.09375rem 0;
-  margin-top: 70px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 7px 30px 14px; }
+  margin-top: 105px; }
 
 .page-title .vcard {
   border: 0px;

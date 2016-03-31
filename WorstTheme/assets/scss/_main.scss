@@ -112,8 +112,7 @@ NAVIGATION STYLES
 /* POST AREA */
 .post {
   background-color: rgba($white, .94);
-  margin-bottom: 35px;
-  padding: 1.09375rem;
+  margin-bottom: 105px;
 
   &:last-child {
     margin-bottom: 0;
@@ -121,11 +120,44 @@ NAVIGATION STYLES
 }
 
 .article-header {
-  padding: 1.09375rem 0;
+  padding: 70px 70px 25px;
+
+  .entry-categories, .entry-title {
+    a {
+      &:link,
+      &:visited {
+        color: $black;
+      }
+
+      &:hover,
+      &:focus {
+        color: $anchor-color-hover;
+        @if $anchor-text-decoration-hover != $anchor-text-decoration {
+          text-decoration: $anchor-text-decoration-hover;
+        }
+      }
+    }
+  }
 
   .entry-categories {
     font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+
+    a {
+      &:link,
+      &:visited {
+        color: #aeb0b1;
+      }
+    }
   }
+
+  .entry-title {
+    font-size: 36px;
+  }
+}
+
+.entry-content {
+  padding: 0 105px 70px;
 }
 
 /*********************
@@ -133,7 +165,8 @@ LOGO AREA
 *********************/
 .logo-container {
   background-color: #30373d;
-  padding: 35px 0;
+  padding: 25px 0;
+  color: #aeb0b1;
 
   .logo {
     color: $white;
@@ -151,10 +184,10 @@ POSTS & CONTENT STYLES
 *********************/
 #content {
   #inner-content {
-    background-color: rgba(244,244,244, 0.25);
-    padding: 1.09375rem 0;
-    margin-top: 70px;
-    box-shadow: rgba(0,0,0,.02) 0px 7px 30px 14px;
+    //background-color: rgba(244,244,244, 0.25);
+    //padding: 1.09375rem 0;
+    margin-top: 105px;
+    //box-shadow: rgba(0,0,0,.02) 0px 7px 30px 14px;
   }
 }
 
